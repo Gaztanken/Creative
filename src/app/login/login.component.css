@@ -1,0 +1,37 @@
+#lock {
+    width:40%;
+    margin: 1.5em auto 4em auto;
+    display:block;
+}
+
+#google {
+  border: 1px solid #95989A;
+  background: #fff  url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/480px-Google_%22G%22_Logo.svg.png') no-repeat 25px;
+  background-size: 25px;
+}
+
+#email {
+  background: #ECECEC  url('http://rexkirby.com/kirbyandson/images/email.svg') no-repeat 25px;
+  background-size: 25px;
+}
+
+@media (max-width: 600px) {
+    #page {
+        padding:1em;
+    }
+    #toolbar {
+        width:90%;
+        margin-left: -45%;
+    }
+    #fb {
+        background:#3B5998;
+    }
+
+    #google {
+        background: #fff;
+    }
+
+    #email {
+        background: #ECECEC;
+    }
+}
