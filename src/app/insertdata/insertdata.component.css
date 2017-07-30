@@ -14,13 +14,6 @@ header {
     margin:0;
 }
 
-.log-out {
-    width:150px;
-    margin:0;
-    background: rgba(0, 0, 0, 0.6);
-    float: right;
-}
-
 #page {
     padding:3em;
     margin:0;

@@ -1,0 +1,23 @@
+
+<div class="form-container" id="toolbar">
+    <header [@fallIn]="state">
+      <button (click)="logout()" class="basic-btn">Logout</button>
+      <button (click)="insertdata()" class="basic-btn">Insert data</button>
+    </header>
+    <div id="page" [@moveInLeft]="state">
+      <h3>Add company name</h3>
+      <input type=”text” [(ngModel)]='newName' (keydown.enter)='addName()' />
+      <h3>Add product name</h3>
+      <input type=”text” [(ngModel)]='newProduct' (keydown.enter)='addProduct()' />
+      <h3>And the list of things we have added:</h3>
+
+      <button (click)="deleteListName()" class="basic-btn">Delete Name</button>
+      <button (click)="deleteListProduct()" class="basic-btn">Delete Name</button>
+      <ul>
+        <li class="text" *ngFor="let item of items | async">
+          {{item.$value}}
+        </li>
+      </ul>
+      <button routerLink="/members" id="basic-btn">Go back to Members</button>
+    </div>
+</div>

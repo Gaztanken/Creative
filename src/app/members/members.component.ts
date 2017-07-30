@@ -29,6 +29,12 @@ export class MembersComponent implements OnInit {
      this.router.navigateByUrl('/login');
   }
 
+    insertdata()  {
+    this.router.navigateByUrl('/insertdata');
+  }
+
+
   ngOnInit() {
   }
+
 }
